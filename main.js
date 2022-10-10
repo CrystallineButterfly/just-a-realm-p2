@@ -22,7 +22,7 @@ renderer.render(scene, camera);
 // Torus
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
+const material = new THREE.MeshStandardMaterial({ color: 0x0000ff });
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
@@ -65,16 +65,16 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('maze-1.jpg');
+const jeffTexture = new THREE.TextureLoader().load('k42.jpg');
 
-const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
+const jeff = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 2), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
 scene.add(jeff);
 
 // Moon
 
-const puzzleTexture = new THREE.TextureLoader().load('.wave-42.jpg');
-const normalTexture = new THREE.TextureLoader().load('.wave-42.jpg');
+const puzzleTexture = new THREE.TextureLoader().load('wave-42.jpg');
+const normalTexture = new THREE.TextureLoader().load('wave-42.jpg');
 
 const puzzle = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
