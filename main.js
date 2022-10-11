@@ -60,12 +60,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('/optical-illusion.webp');
+const spaceTexture = new THREE.TextureLoader().load('./optical-illusion.webp');
 scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('/k42.jpg');
+const jeffTexture = new THREE.TextureLoader().load('./k42.jpg');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 2), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
@@ -73,8 +73,8 @@ scene.add(jeff);
 
 // Moon
 
-const puzzleTexture = new THREE.TextureLoader().load('/turtle.jpg');
-const normalTexture = new THREE.TextureLoader().load('/turtle.jpg');
+const puzzleTexture = new THREE.TextureLoader().load('./turtle.jpg');
+const normalTexture = new THREE.TextureLoader().load('./turtle.jpg');
 
 const puzzle = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
