@@ -22,7 +22,7 @@ renderer.render(scene, camera);
 // Torus
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0x0000ff });
+const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
@@ -60,7 +60,7 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('lab.jpg');
+const spaceTexture = new THREE.TextureLoader().load('optical-illusion.webp');
 scene.background = spaceTexture;
 
 // Avatar
@@ -73,8 +73,8 @@ scene.add(jeff);
 
 // Moon
 
-const puzzleTexture = new THREE.TextureLoader().load('wave-42.jpg');
-const normalTexture = new THREE.TextureLoader().load('wave-42.jpg');
+const puzzleTexture = new THREE.TextureLoader().load('turtle.jpg');
+const normalTexture = new THREE.TextureLoader().load('turtle.jpg');
 
 const puzzle = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
