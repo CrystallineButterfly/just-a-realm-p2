@@ -65,11 +65,11 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('./assets/k42.jpg');
+const k42Texture = new THREE.TextureLoader().load('./assets/k42.jpg');
 
-const jeff = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 2), new THREE.MeshBasicMaterial({ map: jeffTexture }));
+const k42 = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 2), new THREE.MeshBasicMaterial({ map: k42Texture }));
 
-scene.add(jeff);
+scene.add(k42);
 
 // Moon
 
@@ -89,8 +89,8 @@ scene.add(puzzle);
 puzzle.position.z = 30;
 puzzle.position.setX(-10);
 
-jeff.position.z = -5;
-jeff.position.x = 2;
+k42.position.z = -5;
+k42.position.x = 2;
 
 // Scroll Animation
 
@@ -100,8 +100,8 @@ function moveCamera() {
   puzzle.rotation.y += 0.085;
   puzzle.rotation.z += 0.085;
 
-  jeff.rotation.y += 0.01;
-  jeff.rotation.z += 0.01;
+  k42.rotation.y += 0.01;
+  k42.rotation.z += 0.01;
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
