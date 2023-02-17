@@ -30,6 +30,20 @@ canvas {
     color: var(--text-color);
 }
 
+.playv1 {
+  position: relative;
+    padding: 10px 95px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
 .k42 {
  position: relative;
 }
