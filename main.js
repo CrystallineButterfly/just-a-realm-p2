@@ -113,6 +113,20 @@ moveCamera();
 
 // Animation Loop
 
+function moveCamera() {
+  const extraMovementFreedom = document.body.getBoundingClientRect().top;
+  puzzle.rotation.x += 0.085;
+  puzzle.rotation.y += 0.085;
+  puzzle.rotation.z += 0.085;
+
+  k42.rotation.y += 0.01;
+  k42.rotation.z += 0.01;
+
+  camera.position.z = extraMovementFreedom * -0.01;
+  camera.position.x = extraMovementFreedom * -0.0002;
+  camera.rotation.y = extraMovementFreedom * -0.0002;
+}
+
 function animate() {
   requestAnimationFrame(animate);
 
