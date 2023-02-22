@@ -126,7 +126,7 @@ function moveCamera() {
   camera.position.x = extraMovementFreedom * -0.0002;
   camera.rotation.y = extraMovementFreedom * -0.0002;
 }
-
+// Animation Render
 function animate() {
   requestAnimationFrame(animate);
 
